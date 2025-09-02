@@ -5,7 +5,7 @@
   // 🔒 Dozwolone konta (małymi literami)
   const ALLOWED_ACCOUNTS = [
     "pierwszy@firma.pl",
-    "drugi@firma.pl",
+    "biuro@biegunsport.pl",
     "michalgkr@gmail.com",
   ];
 
