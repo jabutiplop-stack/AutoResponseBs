@@ -1,0 +1,38 @@
+/* styles.css - panel boczny */
+.grb-panel {
+  position: fixed;
+  top: 64px;            /* poniżej górnego paska Gmaila */
+  right: 0;
+  width: 420px;
+  height: calc(100% - 64px);
+  background: #fff;
+  border-left: 1px solid #e6e6e6;
+  box-shadow: -8px 0 24px rgba(0,0,0,0.08);
+  z-index: 2147483647;
+  display: flex;
+  flex-direction: column;
+}
+.grb-hidden { display: none !important; }
+.grb-panel__header {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 10px 12px; border-bottom: 1px solid #eee;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+}
+.grb-panel__title { font-weight: 600; }
+.grb-close { background: transparent; border:0; font-size:20px; cursor:pointer; }
+.grb-panel__body { padding: 12px; overflow: auto; flex: 1; }
+.grb-info { color:#666; margin-bottom:8px; font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
+.grb-textarea {
+  width: 100%; min-height: 250px; resize: vertical; padding: 8px;
+  border: 1px solid #ddd; border-radius: 8px;
+  font-family: ui-monospace, Menlo, Consolas, "Courier New", monospace;
+  box-sizing: border-box;
+}
+.grb-panel__footer {
+  display: flex; gap: 8px; align-items: center; padding: 12px; border-top: 1px solid #eee;
+}
+.grb-spacer { flex: 1; }
+.grb-btn { padding: 8px 14px; border-radius: 8px; border:1px solid #d9d9d9; background:#f7f7f7; cursor:pointer; }
+.grb-btn:disabled { opacity:.6; cursor:not-allowed; }
+.grb-btn--primary { background:#1a73e8; color:#fff; border-color:#1a73e8; }
+.grb-btn--ghost { background:#fff; }
